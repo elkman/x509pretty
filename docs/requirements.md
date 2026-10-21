@@ -72,8 +72,8 @@ implemented in 0.1.0; Won't items are not.
 | NFR-08 | Quality | Automated tests with sample PEM files | Coverage ≥ 80 % |
 | NFR-09 | Maintainability | README, documented build, CI pipeline | Green CI on every commit |
 
-Not yet in place: fuzzing (NFR-03), a coverage measurement (NFR-08) and a CI
-pipeline (NFR-09).
+CI (NFR-09) runs on GitHub Actions; release binaries cover NFR-05. Not yet in
+place: fuzzing (NFR-03) and a coverage measurement (NFR-08).
 
 ## Examples
 

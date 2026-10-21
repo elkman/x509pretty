@@ -1,5 +1,7 @@
 # x509pretty
 
+[![CI](https://github.com/elkman/x509pretty/actions/workflows/ci.yml/badge.svg)](https://github.com/elkman/x509pretty/actions/workflows/ci.yml)
+
 Annotate PEM files: every block stays byte-identical and in place, and each
 certificate gets a human-readable comment above it. The output is still a valid
 PEM file that every tool can read.
@@ -29,15 +31,28 @@ MIICaDCCAg6gAwIBAgIUd6Nz1Ie7XOl8JVXb8YaPxpZokKgwCgYIKoZIzj0EAwIw
 
 Requirements and design decisions: [docs/requirements.md](docs/requirements.md).
 
+> [!NOTE]
+> **AI disclaimer:** This project — requirements, code, tests and
+> documentation — was created with extensive assistance from AI (Anthropic's
+> Claude), directed and reviewed by the maintainer. Review it before relying
+> on it for security-relevant decisions. It is provided as is, without
+> warranty; see [LICENSE](LICENSE).
+
 ## Installation
 
-Requires a Rust toolchain, Rust 1.88 or newer.
+Prebuilt binaries for Linux (static, musl), macOS and Windows, each for x86_64
+and arm64, are attached to every
+[GitHub release](https://github.com/elkman/x509pretty/releases), together with
+a SHA-256 checksum per archive.
+
+From source, with Rust 1.88 or newer:
 
 ```sh
-cargo install --path .
+cargo install --git https://github.com/elkman/x509pretty   # latest from GitHub
+cargo install --path .                                     # from a local checkout
 ```
 
-This puts `x509pretty` into `~/.cargo/bin`.
+Both put `x509pretty` into `~/.cargo/bin`.
 
 ## Usage
 
@@ -129,6 +144,12 @@ cargo test                   # unit and integration tests
 cargo clippy --all-targets
 cargo fmt
 ```
+
+GitHub Actions run format check, Clippy (warnings are errors), the tests on
+Linux, macOS and Windows, and a build with the minimum Rust version on every
+push to `main`/`develop` and on pull requests (`.github/workflows/ci.yml`).
+Pushing a tag `vX.Y.Z` builds the release binaries and publishes them as a
+GitHub release (`.github/workflows/release.yml`).
 
 | Path | Content |
 | --- | --- |

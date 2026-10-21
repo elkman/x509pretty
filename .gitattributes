@@ -1,0 +1,4 @@
+# Keep LF everywhere so tests behave the same on Windows; the fixtures are
+# compared byte by byte and must never be converted.
+* text=auto eol=lf
+tests/fixtures/** -text
