@@ -149,7 +149,9 @@ GitHub Actions run format check, Clippy (warnings are errors), the tests on
 Linux, macOS and Windows, and a build with the minimum Rust version on every
 push to `main`/`develop` and on pull requests (`.github/workflows/ci.yml`).
 Pushing a tag `vX.Y.Z` builds the release binaries and publishes them as a
-GitHub release (`.github/workflows/release.yml`).
+GitHub release (`.github/workflows/release.yml`). The release steps are
+described in [docs/releasing.md](docs/releasing.md); changes are listed in
+[CHANGELOG.md](CHANGELOG.md).
 
 | Path | Content |
 | --- | --- |
