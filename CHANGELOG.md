@@ -8,6 +8,8 @@ How releases are made: [docs/releasing.md](docs/releasing.md).
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-10-21
+
 ### Added
 
 - Annotated copy of PEM input: every block stays byte-identical and in place;
@@ -30,4 +32,5 @@ How releases are made: [docs/releasing.md](docs/releasing.md).
 - CI on GitHub Actions and release binaries for Linux, macOS and Windows
   (x86_64 and arm64).
 
-[Unreleased]: https://github.com/elkman/x509pretty/commits/develop
+[Unreleased]: https://github.com/elkman/x509pretty/compare/v0.1.0...develop
+[0.1.0]: https://github.com/elkman/x509pretty/releases/tag/v0.1.0
