@@ -5,6 +5,11 @@ edition = "2024"
 rust-version = "1.88"
 description = "Annotate PEM files: every block stays byte-identical, certificates get a readable comment"
 license = "MIT"
+authors = ["elkman <elkman@users.noreply.github.com>"]
+repository = "https://github.com/elkman/x509pretty"
+readme = "README.md"
+keywords = ["x509", "pem", "certificate", "tls", "cli"]
+categories = ["command-line-utilities", "cryptography"]
 
 [dependencies]
 base64 = "0.23"
