@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 How releases are made: [docs/releasing.md](docs/releasing.md).
 
-## [Unreleased]
+## [v0.1.0] - 21.10.2026
 
 ### Added
 
@@ -30,4 +30,4 @@ How releases are made: [docs/releasing.md](docs/releasing.md).
 - CI on GitHub Actions and release binaries for Linux, macOS and Windows
   (x86_64 and arm64).
 
-[Unreleased]: https://github.com/elkman/x509pretty/commits/develop
+[v0.1.0]: https://github.com/elkman/x509pretty/commits/0.1.0
